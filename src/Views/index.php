@@ -9,6 +9,15 @@
 
 <body>
     <h1>Hello Worl!</h1>
+
+    <ul>
+        <?php foreach ($journals as $journal) : ?>
+            <li>
+                <h2><?= $journal->name; ?></h2>
+                <p><?= $journal->publishedYear; ?></p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 
 </html>
